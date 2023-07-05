@@ -1,7 +1,7 @@
 import { serve } from "https://deno.land/std@0.177.0/http/server.ts";
 
 
-const targetWSHost =  "tx-hk.hteet.com";
+const targetWSHost =  "wh-v2ray.hteet.com";
 async function handler(req: Request): Promise<Response> {
   const url = new URL(req.url);
   const upgrade = req.headers.get("upgrade") || "";
